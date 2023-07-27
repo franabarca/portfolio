@@ -202,4 +202,76 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
   
+  
+}
+@keyframes typing { 
+  from { 
+    width: 0; 
+  } 
+  to { 
+    width: 76%; 
+  } 
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 76%;
+  }
+}
+
+@media (max-width: 1023px) {
+  @keyframes typing {
+    to {
+      width: 87%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 680px) {
+  @keyframes typing {
+    to {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 620px) {
+  @keyframes typing {
+    to {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 563px) {
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+}
+.animate-typing {
+  animation: typing 2s steps(40) 1s 1 normal both,
+             blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+}
+
+/* Define la animación del cursor de parpadeo */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
 }

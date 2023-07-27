@@ -13,10 +13,11 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient"  />
         </div>
 
-        <div className='animate-fade-left animate-once animate-duration-[3000ms]'>
+        <div className='animate-fade-left animate-once animate-duration-[3000ms] '>
           <h1 className={`${styles.heroHeadText}`}>Hola, soy 
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 "> Francisco</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>Desarrollo aplicaciones web FullStack 🧑‍💻</p>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4">
+            Francisco</span></h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 animate-typing inline-block`}>Desarrollo aplicaciones web FullStack 🧑‍💻</p>
         </div>
         
       </div>

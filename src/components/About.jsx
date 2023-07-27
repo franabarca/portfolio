@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect} from "react";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { styles } from "../style";
@@ -54,6 +54,38 @@ const About = () => {
   const stopPropagation = (e) => {
     e.stopPropagation(); // Detener la propagación del evento
   };
+  const modalStyles = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "rgba(0, 0, 0, 0.8)",
+    
+  };
+  const modalRef = useRef();
+
+useEffect(() => {
+  const handleScroll = (e) => {
+    const target = e.target;
+    const modalContainer = modalRef.current;
+
+    // Si el scroll ocurre fuera del contenedor del modal, cierra el modal
+    if (modalContainer && !modalContainer.contains(target)) {
+      handleModalClose();
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+  
+  // Efectos para la animación del modal
+  const modalVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+  };
   const codeString= `                      import React, { useState } from "react";
                       import { motion } from "framer-motion";
                       import { Tilt } from "react-tilt";
@@ -98,7 +130,7 @@ const About = () => {
         Soy{" "}
         <a
           className="underline decoration-purple-800/80 hover:decoration-purple-500 decoration-2 font-bold"
-          href="https://www.linkedin.com/in/francisco-abarca-cock-programmer/"
+          href="https://www.linkedin.com/in/francisco-abarca-programmer/"
           target="_blank"
         >
           Francisco Abarca
@@ -122,7 +154,7 @@ const About = () => {
       </motion.p>
       </div>
       <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px]  rounded-t-lg items-center  ">
-      {/* Aquí puedes colocar tu imagen */}
+
       <img src="/src/assets/francisco.png" alt="Descripción de la imagen" className="animate-fade animate-once animate-duration-[2000ms] rounded-full border-double border-4 border-violet-500 "
       />
     </div>
@@ -144,8 +176,18 @@ const About = () => {
 
       {/* Modal */}
       {isModalOpen && selectedService && (
+        <motion.div
+        ref={modalRef}
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+        onClick={handleModalClose}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+        variants={modalVariants}
+        style={modalStyles}
+      >
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={handleModalClose}>
-          <div className="maxw-2x1 min-w[25rem] bg-[#3a404d] rounded-md overflow-hidden max-h-[700px]" onClick={stopPropagation}>
+          <div className="maxw-2x1 min-w[25rem] bg-[#3a404d] rounded-md overflow-hidden max-h-[600px]" onClick={stopPropagation}>
             <div className="flex justify-between px-4 text-white text-xs items-center">
               <p className="text-sm">Código utilizado</p>
 
@@ -170,11 +212,17 @@ const About = () => {
             </button>)}
               
             </div>
-            <SyntaxHighlighter language="jsx" style={atomOneDark} customStyle={{padding:"25px"}} wrapLongLines={true}>
+            <SyntaxHighlighter
+        language="jsx"
+        style={atomOneDark}
+        customStyle={{ padding: "25px", wordWrap: "break-word", overflowY: "auto" }}
+        wrapLongLines={true}
+      >
               {codeString}
             </SyntaxHighlighter>
           </div>
         </div>
+        </motion.div>
       )}
     </>
   );

@@ -5,10 +5,11 @@ import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { textVariant } from "../utils/motion";
+
 const Tech = () => {
   return (
-    <>
-    <motion.div variants={textVariant()}>
+    <div className="max-w-800 mx-auto border-purple-500 border rounded-lg p-8 animate-fade">
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           Dominio de
         </p>
@@ -16,14 +17,14 @@ const Tech = () => {
           Technologias.
         </h2>
       </motion.div>
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
+      <div className='flex flex-row flex-wrap justify-center gap-10'>
+        {technologies.map((technology) => (
+          <div className='w-28 h-28' key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
     </div>
-    </>
   );
 };
 
