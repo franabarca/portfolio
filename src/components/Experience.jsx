@@ -78,7 +78,7 @@ const Experience = () => {
           Mundo laboral
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Experiencia.
+          Experiencia
         </h2>
       </motion.div>
 
