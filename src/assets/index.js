@@ -27,9 +27,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import falabella from "./company/falabella.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 
 import python  from "./pythonn.png";
 import postgresql from "./postgresql.png"
@@ -63,9 +61,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   falabella,
   python,
   postgresql,

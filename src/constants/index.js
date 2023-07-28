@@ -20,9 +20,6 @@ import {
     tesla,
     falabella,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     python,
     postgresql,
@@ -188,7 +185,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: "",
       source_code_link: "https://github.com/",
     },
     {
@@ -209,7 +206,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: "",
       source_code_link: "https://github.com/",
     },
     
