@@ -24,7 +24,7 @@ const Hero = () => {
   </div>
   <div className="flex justify-center mx-auto">
   <img className="animate-fade animate-duration-1000" src={imagenes[1]} alt="Francisco" />
-    <StarsCanvas/> 
+    
   </div>
 </div>
 
