@@ -88,6 +88,14 @@ import {
       icon: typescript,
     },
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Postgresql",
+      icon: postgresql,
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
@@ -102,10 +110,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
