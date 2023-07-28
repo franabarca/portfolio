@@ -5,7 +5,7 @@ import { styles } from "../style";
 import { services } from "../constants/index";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-
+import { imagenes } from "../constants";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="sm:w-[250px] w-full">
     <motion.div
@@ -67,8 +67,8 @@ const About = () => {
             hasta la implementación.
           </motion.p>
         </div>
-        <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px]  rounded-t-lg items-center  ">
-          <img src="/src/assets/francisco.png" alt="Descripción de la imagen" className="animate-fade animate-once animate-duration-[2000ms] rounded-full border-double border-4 border-violet-500" />
+        <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px]  rounded-full items-center  ">
+          <img src={imagenes[0]} alt="Descripción de la imagen" className="animate-fade animate-once animate-duration-[2000ms] rounded-full border-4 border-violet-500" />
         </div>
       </div>
 

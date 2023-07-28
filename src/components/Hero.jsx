@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import { SectionWrapper } from "../hoc";
 import { styles } from '../style';
 import { HerosCanvas, StarsCanvas } from './canvas';
+import { imagenes } from "../constants";
+
 
 const Hero = () => {
   return (
@@ -21,7 +23,7 @@ const Hero = () => {
     </p>
   </div>
   <div className="flex justify-center mx-auto">
-    <img className="animate-fade animate-duration-1000" src="/src/assets/astronauta.png" alt="" />
+  <img className="animate-fade animate-duration-1000" src={imagenes[1]} alt="Francisco" />
     <StarsCanvas/> 
   </div>
 </div>

@@ -27,13 +27,17 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import falabella from "./company/falabella.png";
 
-
+import astronauta from "./astronauta.png";
+import francisco from "./francisco.jpg";
 
 import python  from "./pythonn.png";
 import postgresql from "./postgresql.png"
 import django from "./django.png";
 import dockerr from "./docker.jpg";
 import javascriptt from "./javascript.png";
+
+import portafolio from "./portafolio.png";
+import petcuy from "./petcuy.png";
 
 export {
   logo,
@@ -66,5 +70,9 @@ export {
   postgresql,
   django,
   dockerr,
-  javascriptt
+  javascriptt,
+  portafolio,
+  astronauta,
+  francisco,
+  petcuy
 };

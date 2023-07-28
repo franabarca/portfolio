@@ -11,7 +11,7 @@ const Tech = () => {
     <div className="max-w-800 mx-auto border-purple-500 border rounded-lg p-8 animate-fade">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Dominio de
+          Conocimiento de
         </p>
         <h2 className={`${styles.sectionHeadText} text-center pb-10`}>
           Technologias.

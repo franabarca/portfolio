@@ -25,9 +25,16 @@ import {
     postgresql,
     django,
     dockerr,
-    javascriptt
+    javascriptt,
+    portafolio,
+    astronauta,
+    francisco,
+    petcuy
   } from "../assets";
-  
+
+  export const imagenes = [francisco, astronauta
+  ];
+
   export const navLinks = [
     {
       id: "sobre-mi",
@@ -142,42 +149,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "",
+      name: "",
+      designation: "",
+      company: "",
+      image: "",
     },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Portafolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Aplicación web para demostrar un poco sobre mis conocimientos y mi trabajo como programador.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
@@ -185,29 +177,29 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: "",
-      source_code_link: "https://github.com/",
+      image: portafolio,
+      source_code_link: "https://github.com/franabarca/portfolio",
     },
     {
-      name: "Job IT",
+      name: "Pet Cuy",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Aplicación móvil enfocada a la reportar la perdida de mascotas, utilizando google maps y variados servicios en la nube.",
       tags: [
         {
-          name: "react",
+          name: "angular",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "django",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "cloudinary",
           color: "pink-text-gradient",
         },
       ],
-      image: "",
-      source_code_link: "https://github.com/",
+      image: petcuy,
+      source_code_link: "https://github.com/franabarca/pet-cuy/tree/master",
     },
     
   ];
