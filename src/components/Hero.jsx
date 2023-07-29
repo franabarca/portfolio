@@ -1,9 +1,6 @@
-import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../style';
-import { HerosCanvas, StarsCanvas } from './canvas';
 import { imagenes } from '../constants';
-import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 const scrollToSection = (sectionId) => {
   const section = document.getElementById(sectionId);

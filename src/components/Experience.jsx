@@ -55,7 +55,7 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
       
-      <span className="inline-grid grid-cols-6 gap-4 pl-8 pt-2">
+      <span className="mt-6 inline-grid grid-cols-6 gap-4 pl-8 pt-2">
   {experience.techs &&
     experience.techs.map((tech, index) => (
       <img
@@ -82,7 +82,7 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-20 flex flex-col text-justify'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
