@@ -28,32 +28,24 @@ const Hero = () => {
     <div className="absolute top-0 -right-4 w-36 h-36 bg-violet-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
     <div className="absolute -bottom-8 left-20 w-36 h-36 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-    <img className="animate-fade animate-duration-1000" src={imagenes[1]} alt="Francisco" />
+    <img className="animate-shake animate-infinite animate-duration-[3000ms] animate-ease-linear" src={imagenes[1]} alt="Francisco" />
   </div>
 </div>
+<a href="#sobre-mi">
+<div class="absolute xs:bottom-10 botton-32 top-[50rem] animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
 
+    <svg class="w-6 h-6 text-violet-500 flex justify-center" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+      <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  
+  </div>
+  </a>
 </div>
 
 
 
 
-      <div className="absolute xs:bottom-10 botton-32 w-full flex justify-center items-center">
-        <a href="#sobre-mi">
-          <div className="w-[35px] h-[64px] rounded-full border-4 border-indigo-500 flex justify-center items-start p-2">
-            <motion.dev
-              animate={{
-                y:[0, 24, 0]
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop'
-              }}
-              className="w-3 h-3 rounded-full bg-indigo-500/100 mb-1"
-            ></motion.dev>
-          </div>
-        </a>
-      </div>
+
     </section>
   )
 }
