@@ -7,8 +7,8 @@ import { imagenes } from "../constants";
 
 const Hero = () => {
   return (
-    <section className='relative h-screen mx-auto pt-[6rem]'>
-<div className="container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32">
+    <section className='relative h-screen mx-auto '>
+<div className="container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 pt-[4rem]">
 
 <div className="animate-fade-left animate-once animate-duration-[3000ms]">
   <h1 className={`${styles.heroHeadText}`}>
