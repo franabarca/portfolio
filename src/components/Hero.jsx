@@ -7,36 +7,33 @@ import { imagenes } from "../constants";
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto pt-[6rem]'>
-      <div className="container flex flex-col items-center justify-center gap-5 mx-auto">
-     
+    <section className='relative h-screen mx-auto pt-[6rem]'>
+<div className="container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32">
 
-  <div className="animate-fade-left animate-once animate-duration-[3000ms]">
-  
-    <h1 className={`${styles.heroHeadText}`}>Hola, soy 
-      <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4">
-        Francisco
-      </span>
-    </h1>
-    <p className={`${styles.heroSubText} mt-2 text-white-100 animate-typing inline-block`}>
-      Desarrollo aplicaciones web FullStack 🧑‍💻
-    </p>
-  </div>
-  <div className="flex justify-center mx-auto">
-  
-  <div class="relative w-full max-w-lg">
-    <div class="absolute top-1 -left-4 w-72 h-72 bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 -right-4 w-72 h-72 bg-violet-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-    <div class="m-8 relative space-y-4">
+<div className="animate-fade-left animate-once animate-duration-[3000ms]">
+  <h1 className={`${styles.heroHeadText}`}>
+    Hola, soy
+    <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4">
+      Francisco
+    </span>
+  </h1>
+  <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block`}>
+    Desarrollo aplicaciones web FullStack
+  </p>
+</div>
 
-    <img className=" animate-fade animate-duration-1000" src={imagenes[1]} alt="Francisco" />
+<div className="flex justify-center mx-auto">
+  <div className="relative w-full max-w-lg">
+    <div className="absolute top-1 -left-4 w-36 h-36 bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+    <div className="absolute top-0 -right-4 w-36 h-36 bg-violet-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div className="absolute -bottom-8 left-20 w-36 h-36 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-    </div>
-  </div>
-
+    <img className="animate-fade animate-duration-1000" src={imagenes[1]} alt="Francisco" />
   </div>
 </div>
+
+</div>
+
 
 
 
