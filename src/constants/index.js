@@ -1,3 +1,5 @@
+
+import 'react-tooltip/dist/react-tooltip.css';
 import {
     mobile,
     backend,
@@ -74,58 +76,77 @@ import {
     {
       name: "HTML 5",
       icon: html,
+      description:"HTML5-Nivel-Intermedio"
     },
     {
       name: "CSS 3",
       icon: css,
+      description:"CSS3-Nivel-Intermedio"
     },
     {
       name: "JavaScript",
       icon: javascript,
+      description:"JavaScript-Nivel-Intermedio"
     },
     {
       name: "TypeScript",
       icon: typescript,
+      description:"TypeScript-Nivel-Intermedio"
     },
     {
       name: "Python",
       icon: python,
+      description:"TypeScript-Nivel-Intermedio"
+    },
+    {
+      name: "Django",
+      icon: django,
+      description:"Django-Nivel-Intermedio"
     },
     {
       name: "Postgresql",
       icon: postgresql,
+      description:"Postgresql-Nivel-Intermedio"
     },
     {
       name: "React JS",
       icon: reactjs,
+      description:"React JS-Nivel-Intermedio"
     },
     {
       name: "Redux Toolkit",
       icon: redux,
+      description:"Redux Toolkit-Nivel-Básico"
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
+      description:"Tailwind CSS-Nivel-Intermedio"
     },
     {
       name: "Node JS",
       icon: nodejs,
+      description:"Node JS-Nivel-Intermedio"
     },
     {
       name: "Three JS",
       icon: threejs,
+      description:"Three JS-Nivel-Básico"
     },
     {
       name: "git",
       icon: git,
+      description:"Git-Nivel-Intermedio"
     },
     {
       name: "figma",
       icon: figma,
+      description:"Figma-Nivel-Intermedio"
     },
     {
       name: "docker",
       icon: docker,
+      description:"Docker-Nivel-Básico"
     },
   ];
   
