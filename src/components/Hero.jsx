@@ -8,29 +8,11 @@ import React, { useEffect, useState } from "react";
 const scrollToSection = (sectionId) => {
   const section = document.getElementById(sectionId);
   if (section) {
-    const offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
-    window.scroll({
-      top: offsetTop,
-      behavior: "smooth",
-    });
+    section.scrollIntoView({ behavior: "smooth" });
   }
 };
 const Hero = () => {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     < >
@@ -59,8 +41,7 @@ const Hero = () => {
               src={imagenes[1]}
               alt='Francisco'
             />
-            <button
-          type="button"
+      <div
           onClick={() => scrollToSection("sobre-mi")}
           style={{
             cursor: "pointer",
@@ -82,7 +63,7 @@ const Hero = () => {
               <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
           </div>
-        </button>
+          </div>
         </div>
       </div>
     </div >
