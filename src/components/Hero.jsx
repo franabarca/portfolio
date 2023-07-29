@@ -4,18 +4,34 @@ import { styles } from '../style';
 import { HerosCanvas, StarsCanvas } from './canvas';
 import { imagenes } from '../constants';
 import { Link } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
 const scrollToSection = (sectionId) => {
   const section = document.getElementById(sectionId);
   if (section) {
     const offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
     window.scroll({
       top: offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
 };
 const Hero = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     < >
 
@@ -44,32 +60,28 @@ const Hero = () => {
               alt='Francisco'
             />
             <button
-            type='button'
-            onClick={() => scrollToSection('sobre-mi')}
-            style={{
-              cursor: 'pointer',
-              backgroundColor: 'transparent',
-              border: 'none',
-              padding: 0,
-            }}
-          >
-            <div>
-          
-            <div className='animate-bounce absolute bottom-[-30px] left-[45%] transform -translate-x-1/2 xs:bottom-[-50px] bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center'>
-              <svg
-                className='w-6 h-6 text-violet-500 flex justify-center'
-                fill='none'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-              >
-                <path d='M19 14l-7 7m0 0l-7-7m7 7V3'></path>
-              </svg>
-            </div>
-          
-        </div>
+          type="button"
+          onClick={() => scrollToSection("sobre-mi")}
+          style={{
+            cursor: "pointer",
+            backgroundColor: "transparent",
+            border: "none",
+            padding: 0,
+          }}
+        >
+          <div className="animate-bounce absolute bottom-[-30px] left-[45%] transform -translate-x-1/2 xs:bottom-[-50px] bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+            <svg
+              className="w-6 h-6 text-violet-500 flex justify-center"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
         </button>
         </div>
       </div>
