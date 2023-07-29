@@ -224,7 +224,7 @@ import {
         },
       ],
       image: petcuy,
-      source_code_link: "https://github.com/franabarca/pet-cuy/tree/master",
+      source_code_link: "https://github.com/franabarca/pet-cuy",
     },
     
   ];
