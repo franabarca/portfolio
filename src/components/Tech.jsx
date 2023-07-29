@@ -29,7 +29,7 @@ const Tech = () => {
               <img
                 src={technology.icon}
                 alt={technology.name}
-                className="rounded-full border-black border-4 min-w-[50px] xl:min-w-[80px]"
+                className="rounded-full min-w-[50px] xl:min-w-[80px]"
                 data-event="mouseover" // Mostrar Tooltip al hacer hover
               />
             </a>

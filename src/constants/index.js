@@ -31,7 +31,11 @@ import {
     portafolio,
     astronauta,
     francisco,
-    petcuy
+    petcuy,
+    angular,
+    java,
+    oracle,
+    mysql
   } from "../assets";
 
   export const imagenes = [francisco, astronauta
@@ -102,6 +106,26 @@ import {
       name: "Django",
       icon: django,
       description:"Django-Nivel-Intermedio"
+    },
+    {
+      name: "Angular",
+      icon: angular,
+      description:"Angular-Nivel-Intermedio"
+    },
+    {
+      name: "Java",
+      icon: java,
+      description:"Java-Nivel-Intermedio"
+    },
+    {
+      name: "Mysql",
+      icon: mysql,
+      description:"Mysql-Nivel-Intermedio"
+    },
+    {
+      name: "Oracle",
+      icon: oracle,
+      description:"Oracle-Nivel-Avanzado"
     },
     {
       name: "Postgresql",

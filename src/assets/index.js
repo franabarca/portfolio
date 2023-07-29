@@ -35,6 +35,10 @@ import postgresql from "./postgresql.png"
 import django from "./django.png";
 import dockerr from "./docker.jpg";
 import javascriptt from "./javascript.png";
+import angular  from "./angular.png";
+import java  from "./java.png";
+import mysql  from "./mysql.png";
+import oracle  from "./oracle.jpg";
 
 import portafolio from "./portafolio.png";
 import petcuy from "./petcuy.png";
@@ -74,5 +78,9 @@ export {
   portafolio,
   astronauta,
   francisco,
-  petcuy
+  petcuy,
+  angular,
+  java,
+  oracle,
+  mysql
 };
