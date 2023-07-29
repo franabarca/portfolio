@@ -33,7 +33,7 @@ const Hero = () => {
               alt='Francisco'
             />
             <a href='#sobre-mi'>
-              <div className='absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 xs:bottom-[-50px] bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center'>
+              <div className=' animate-bounce absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 xs:bottom-[-50px] bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center'>
 
                 <svg
                   className='w-6 h-6 text-violet-500 flex justify-center'
