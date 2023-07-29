@@ -232,7 +232,7 @@ import {
     {
       name: "Pet Cuy",
       description:
-        "Aplicación móvil enfocada a la reportar la perdida de mascotas, utilizando google maps y variados servicios en la nube.",
+        "Aplicación móvil enfocada en reportar la perdida de mascotas, utilizando google maps y variados servicios en la nube.",
       tags: [
         {
           name: "angular",

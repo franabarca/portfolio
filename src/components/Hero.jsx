@@ -1,52 +1,58 @@
-import { motion } from 'framer-motion'
-import { SectionWrapper } from "../hoc";
+import { motion } from 'framer-motion';
+import { SectionWrapper } from '../hoc';
 import { styles } from '../style';
 import { HerosCanvas, StarsCanvas } from './canvas';
-import { imagenes } from "../constants";
-
+import { imagenes } from '../constants';
 
 const Hero = () => {
   return (
-    <section className='relative h-screen mx-auto '>
-<div className="container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 pt-[4rem]">
+    <section className='relative h-screen mx-auto'>
+      <div className='container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 '>
+        <div className='animate-fade-left animate-once animate-duration-[3000ms]'>
+          <h1 className={`${styles.heroHeadText}`}>
+            Hola, soy
+            <span className='bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4'>
+              Francisco
+            </span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block`}>
+            Desarrollo aplicaciones web FullStack
+          </p>
+        </div>
 
-<div className="animate-fade-left animate-once animate-duration-[3000ms]">
-  <h1 className={`${styles.heroHeadText}`}>
-    Hola, soy
-    <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4">
-      Francisco
-    </span>
-  </h1>
-  <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block`}>
-    Desarrollo aplicaciones web FullStack
-  </p>
-</div>
+        <div className='flex justify-center mx-auto relative'>
+          <div className='w-full max-w-lg'>
+            <div className='absolute top-1 -left-4 w-36 h-36 bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
+            <div className='absolute top-0 -right-4 w-36 h-36 bg-violet-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000'></div>
+            <div className='absolute -bottom-8 left-20 w-36 h-36 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
 
-<div className="flex justify-center mx-auto">
-  <div className="relative w-full max-w-lg">
-    <div className="absolute top-1 -left-4 w-36 h-36 bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-    <div className="absolute top-0 -right-4 w-36 h-36 bg-violet-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-    <div className="absolute -bottom-8 left-20 w-36 h-36 bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <img
+              className='animate-shake animate-infinite animate-duration-[3000ms] animate-ease-linear'
+              src={imagenes[1]}
+              alt='Francisco'
+            />
 
-    <img className="animate-shake animate-infinite animate-duration-[3000ms] animate-ease-linear" src={imagenes[1]} alt="Francisco" />
-  </div>
-</div>
-<a href="#sobre-mi">
-<div class="absolute xs:bottom-10 botton-32 top-[50rem] animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
-
-    <svg class="w-6 h-6 text-violet-500 flex justify-center" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-      <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
-  
-  </div>
-  </a>
-</div>
-
-
-
-
-
+            <div className='absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 xs:bottom-[-50px] bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center'>
+              <a href='#sobre-mi'>
+                <svg
+                  className='w-6 h-6 text-violet-500 flex justify-center'
+                  fill='none'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path d='M19 14l-7 7m0 0l-7-7m7 7V3'></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  )
-}
-export default SectionWrapper(Hero, "");
+  );
+};
+
+export default SectionWrapper(Hero, '');
+
