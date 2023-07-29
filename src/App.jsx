@@ -15,7 +15,7 @@ const App = () => {
       </div>
   
 
-    <div className='sm:mt-[10rem] lg:mt-[3rem] md:mt-[2rem]'><About/></div>
+      <About/>
 
       <Experience/>
       <Tech/>
