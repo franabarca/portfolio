@@ -39,7 +39,7 @@ const Hero = () => {
               alt='Francisco'
             />
 
-          <div           onClick={() => scrollToSection("sobre-mi")}
+          <div          ontouchstar={() => scrollToSection("sobre-mi")}
           style={{
             cursor: "pointer",
             backgroundColor: "transparent",
