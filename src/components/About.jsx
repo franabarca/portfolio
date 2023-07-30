@@ -30,7 +30,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className="grid grid-rows-2 md:grid-flow-col gap-3 md:items-center ">
+      <div className="grid grid-rows-2 md:grid-flow-col gap-10 md:items-center ">
         <div className="row-span-2 lg:col-span-2">
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Presentación</p>
@@ -38,7 +38,7 @@ const About = () => {
           </motion.div>
 
           <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
+            variants={fadeIn("", "", 0.1, 0.5)}
             className="text-secondary text-[17px] col-span-2... leading-[30px] indent-8 text-justify mt-7"
           >
             Soy{" "}
@@ -67,7 +67,7 @@ const About = () => {
             hasta la implementación.
           </motion.p>
         </div>
-        <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px]  rounded-full items-center  ">
+        <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px] rounded-full items-center  ">
           <img src={imagenes[0]} alt="Descripción de la imagen" className="animate-fade animate-once animate-duration-[2000ms] rounded-full border-4 border-violet-500" />
         </div>
       </div>
