@@ -14,7 +14,17 @@ const Hero = () => {
   return (
     <>
       <div className='container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 mt-4'>
-        {/* ... (código anterior) */}
+      <div className='animate-fade-left animate-once animate-duration-[3000ms]'>
+          <h1 className={`${styles.heroHeadText}`}>
+            Hola, soy
+            <span className='bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4'>
+              Francisco
+            </span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block`}>
+            Desarrollo aplicaciones web FullStack
+          </p>
+        </div>
 
         <div className='flex justify-center mx-auto relative'>
           <div className='w-full max-w-lg'>
