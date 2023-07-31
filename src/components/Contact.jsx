@@ -115,8 +115,8 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-
-          <div className='flex justify-between'>
+          
+          <div className='flex justify-between items-center'>
             <button
               type='submit'
               className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
@@ -124,27 +124,28 @@ const Contact = () => {
               {loading ? "Enviando..." : "Enviar"}
             </button>
 
-            <div className='flex justify-end gap-4 '>
+            <div className='flex space-x-4'>
               <img
                 onClick={() => window.open("https://wa.me/56930930838", "_blank")}
                 src={wasap}
                 alt='source code'
-                className='w-12 h-12 rounded-full  border-blue-950 border-4 cursor-pointer ml-auto'
+                className='w-12 h-12 rounded-full border-blue-950 border-4 cursor-pointer'
               />
               <img
                 onClick={() => window.open("https://www.linkedin.com/in/francisco-abarca-cock-programmer/", "_blank")}
                 src={linkedin}
                 alt='source code'
-                className='w-12 h-12 rounded-full   border-blue-950 border-4 cursor-pointer ml-auto'
+                className='w-12 h-12 rounded-full border-blue-950 border-4 cursor-pointer'
               />
               <img
                 onClick={() => window.open("mailto:f.abarcaprogramer@gmail.com", "_blank")}
                 src={gmail}
                 alt='source code'
-                className='w-12 h-12 rounded-full  border-blue-950 border-4  cursor-pointer ml-auto'
+                className='w-12 h-12 rounded-full border-blue-950 border-4 cursor-pointer'
               />
             </div>
           </div>
+
         </form>
       </motion.div>
 
