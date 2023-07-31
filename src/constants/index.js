@@ -100,7 +100,7 @@ import {
     {
       name: "Python",
       icon: python,
-      description:"TypeScript-Nivel-Intermedio"
+      description:"Python-Nivel-Intermedio"
     },
     {
       name: "Django",
