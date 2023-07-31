@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <>
       <div className='container flex flex-col items-center justify-center gap-5 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 mt-4'>
-      <div className='animate-fade-left animate-once animate-duration-[3000ms]'>
+        <div className='animate-fade-left animate-once animate-duration-[3000ms]'>
           <h1 className={`${styles.heroHeadText}`}>
             Hola, soy
             <span className='bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800 ml-4'>
@@ -39,8 +39,8 @@ const Hero = () => {
             />
 
             {/* Cambiamos el div con onClick a un botón */}
-            <button
-              onClick={() => scrollToSection("sobre-mi")}
+
+            <a href={`#sobre-mi`}
               style={{
                 cursor: "pointer",
                 border: "none",
@@ -59,7 +59,7 @@ const Hero = () => {
               >
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

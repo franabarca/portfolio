@@ -84,7 +84,7 @@ const Works = () => {
           habilidades y experiencia a través de ejemplos 
           reales de mi trabajo. Cada proyecto se describe 
           brevemente con enlaces a repositorios de código y 
-          demostraciones en vivo. Refleja mi capacidad para 
+          demostraciones en vivo. Refleja la capacidad que tengo para 
           resolver problemas complejos, trabajar con diferentes 
           tecnologías y administrar proyectos de manera efectiva.
         </motion.p>

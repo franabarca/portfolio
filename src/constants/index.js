@@ -180,7 +180,7 @@ import {
       company_name: "Banco Falabella",
       icon: falabella,
       iconBg: "#015231",
-      date: "Enero 2023 - April 2023",
+      date: "Enero 2023 - Abril 2023",
       points: [
         "Diseñé una aplicación web desde cero, la aplicación obtenía los datos(excel) de distintas plataformas utilizadas por los colaboradores de Banco, unificandolos dentro de una base de datos.",
         "Con solo escribir el rut del colaborador, se podía obtener de manera fácil y rápida todas las cuentas de usuario que tenía operativas ese colaborador.",

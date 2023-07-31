@@ -6,6 +6,7 @@ import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { wasap, linkedin, gmail } from "../assets";
 
 
 const Contact = () => {
@@ -115,12 +116,35 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Enviando..." : "Enviar"}
-          </button>
+          <div className='flex justify-between'>
+            <button
+              type='submit'
+              className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            >
+              {loading ? "Enviando..." : "Enviar"}
+            </button>
+
+            <div className='flex justify-end gap-4 '>
+              <img
+                onClick={() => window.open("https://wa.me/56930930838", "_blank")}
+                src={wasap}
+                alt='source code'
+                className='w-12 h-12 rounded-full  border-blue-950 border-4 cursor-pointer ml-auto'
+              />
+              <img
+                onClick={() => window.open("https://www.linkedin.com/in/francisco-abarca-cock-programmer/", "_blank")}
+                src={linkedin}
+                alt='source code'
+                className='w-12 h-12 rounded-full   border-blue-950 border-4 cursor-pointer ml-auto'
+              />
+              <img
+                onClick={() => window.open("mailto:f.abarcaprogramer@gmail.com", "_blank")}
+                src={gmail}
+                alt='source code'
+                className='w-12 h-12 rounded-full  border-blue-950 border-4  cursor-pointer ml-auto'
+              />
+            </div>
+          </div>
         </form>
       </motion.div>
 
