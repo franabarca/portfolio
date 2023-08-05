@@ -67,7 +67,7 @@ const About = () => {
             hasta la implementación.
           </motion.p>
         </div>
-        <div className="mx-auto row-span-3 max-w-[300px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[300px] rounded-full items-center  ">
+        <div className="mx-auto row-span-3 max-w-[250px] xl:mt-20 lg:mt-20 lg:mr-8 lg:ml-5 min-w-[200px] rounded-full items-center  ">
           <img src={imagenes[0]} alt="Descripción de la imagen" className="animate-fade animate-once animate-duration-[2000ms] rounded-full border-4 border-violet-500" />
         </div>
       </div>
