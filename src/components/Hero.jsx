@@ -40,7 +40,7 @@ const Hero = () => {
 
             {/* Cambiamos el div con onClick a un botón */}
 
-            <a href="#sobre-mi"
+            <a href="#experiencia"
               style={{
                 cursor: "pointer",
                 border: "none",

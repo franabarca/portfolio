@@ -1,6 +1,13 @@
 
 import 'react-tooltip/dist/react-tooltip.css';
 import {
+    elk,
+    postman,
+    spring,
+    aws,
+    redhat,
+    gitlab,
+    agiled,
     mobile,
     backend,
     creator,
@@ -175,6 +182,25 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Ingeniero de Proyectos",
+      company_name: "Agiled",
+      icon: agiled,
+      iconBg: "#075985",
+      date: "Julio 2023 - Actualidad",
+      points:[
+        "Clínica INDISA",
+        "Desarrollo de soluciones web para modernizar sistemas de gestión de usuarios.",
+        "Enfoque en la creación de aplicaciones para optimizar procesos de gestión.",
+        "Participación en desarrollo, migración e integración (KLINIK) para mejorar operaciones clínicas.",
+        "COPEC",
+        "Gestión y ejecución de migración de aplicaciones de IBM Websphere a Red Hat Openshift en AWS.",
+        "Optimización de códigos y mejora en la gestión de bases de datos.",
+        "Realización de pruebas para garantizar funcionalidad de distintas aplicaciones."
+      ],
+      techs:[reactjs, java, spring, aws, redhat, gitlab, oracle, postman, elk]
+    }
+    ,
     {
       title: "Desarrollador FullStack",
       company_name: "Banco Falabella",

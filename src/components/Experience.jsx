@@ -14,6 +14,7 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
+    
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
@@ -27,7 +28,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[85%] h-[85%] object-contain'
           />
         </div>
       }
@@ -42,26 +43,38 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
+
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-            
-            
-          </li>
-        ))}
+        {experience.points.map((point, index) => {
+          if (point.includes('COPEC') || point.includes('Clínica INDISA')) {
+            return (
+              <div
+                key={`experience-point-${index}`}
+                className='text-red-600 text-[14px] pl-1 font-bold'
+              >
+                {point}
+              </div>
+            );
+          } else {
+            return (
+              <li
+                key={`experience-point-${index}`}
+                className='text-white-100 text-[14px] pl-1 tracking-wider'
+              >
+                {point}
+              </li>
+            );
+          }
+        })}
       </ul>
       
-      <span className="mt-6 inline-grid grid-cols-6 gap-4 pl-8 pt-2">
+      <span className="mt-6 inline-grid grid-cols-5 gap-4 pl-8 pt-2">
   {experience.techs &&
     experience.techs.map((tech, index) => (
       <img
         key={`experience-tech-${index}`}
         src={tech}
-        className="rounded-full border-black border-4 min-w-[50px] xl:min-w-[80px]"
+        className="rounded-full border-black border-4 min-w-[50px] min-h-[50px] xl:min-w-[80px] xl:min-h-[80px] bg-white"
       />
     ))}
 </span>

@@ -23,12 +23,19 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
+import spring from "./tech/spring.png";
+import aws from "./tech/aws.png";
+import redhat from "./tech/redhat.png";
+import gitlab from "./tech/gitlab.png";
+import postman from "./tech/postman.jpg";
+import elk from "./tech/elk.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import falabella from "./company/falabella.png";
+import agiled from "./company/agiled.png";
 
 import astronauta from "./astronauta.png";
 import francisco from "./francisco.jpg";
@@ -47,6 +54,13 @@ import portafolio from "./portafolio.png";
 import petcuy from "./petcuy.png";
 
 export {
+  elk,
+  postman,
+  spring,
+  aws,
+  redhat,
+  gitlab,
+  agiled,
   logo,
   backend,
   creator,
