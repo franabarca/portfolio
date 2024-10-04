@@ -21,10 +21,17 @@ const Hero = () => {
               Francisco
             </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 inline-block pr-4`}>
             Desarrollo aplicaciones web FullStack
           </p>
+
         </div>
+        <button
+            onClick={() => window.open('/portfolio/cv/CV_Francisco_Abarca.pdf', '_blank')}
+            className=" bg-indigo-600 text-white py-1 px-4 rounded hover:bg-indigo-700 transition duration-300 hover:-translate-y-1 hover:scale-110"
+          >
+            Descargar CV
+          </button>
 
         <div className='flex justify-center mx-auto relative'>
           <div className='w-full max-w-lg'>
