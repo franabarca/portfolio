@@ -14,8 +14,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  actions: write
-  deployments: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -32,8 +30,6 @@ jobs:
       pages: write
       id-token: write
       contents: read
-      actions: write
-      deployments: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,15 +46,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: github-pages
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: github-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/deploy-pages@v4
