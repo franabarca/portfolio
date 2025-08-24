@@ -36,6 +36,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import falabella from "./company/falabella.png";
 import agiled from "./company/agiled.png";
+import arqit from "./company/arqit.png";
 
 import astronauta from "./astronauta.png";
 import francisco from "./francisco.jpg";
@@ -49,6 +50,7 @@ import angular  from "./angular.png";
 import java  from "./java.png";
 import mysql  from "./mysql.png";
 import oracle  from "./oracle.jpg";
+import quarkus from "./tech/quarkus.png";
 
 import portafolio from "./portafolio.png";
 import petcuy from "./petcuy.png";
@@ -102,5 +104,7 @@ export {
   mysql,
   wasap,
   linkedin,
-  gmail
+  gmail,
+  arqit,
+  quarkus
 };

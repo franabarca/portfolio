@@ -42,7 +42,9 @@ import {
     angular,
     java,
     oracle,
-    mysql
+    mysql,
+    arqit,
+    quarkus
   } from "../assets";
 
   export const imagenes = [francisco, astronauta
@@ -183,11 +185,27 @@ import {
   
   const experiences = [
     {
+      title: "Desarrollador Back-End",
+      company_name: "Arq-IT",
+      icon: arqit,
+      iconBg: "#E3F9FC",
+      date: "Noviembre 2024 - Actualidad",
+      points:[
+        "Bice Vida",
+        "Implementación de micro servicios REST para el procesamiento de documentos y formularios de evaluación de clientes.",
+        "Desarrollo de funciones Lambda y Step Functions en AWS para la orquestación y generación de eventos. ",
+        "Resolución de incidencias, mantenimiento y soporte de servicios en producción.",
+        "Optimización en el consumo de servicios desde el frontend, según lineamientos del cliente."
+      ],
+      techs:[ java, spring,quarkus , aws,angular, mysql, postman]
+    }
+    ,
+    {
       title: "Ingeniero de Proyectos",
       company_name: "Agiled",
       icon: agiled,
       iconBg: "#075985",
-      date: "Julio 2023 - Actualidad",
+      date: "Julio 2023 - Noviembre 2024",
       points:[
         "Clínica INDISA",
         "Desarrollo de soluciones web para modernizar sistemas de gestión de usuarios.",

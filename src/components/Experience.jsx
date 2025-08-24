@@ -46,11 +46,11 @@ const ExperienceCard = ({ experience }) => {
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => {
-          if (point.includes('COPEC') || point.includes('Clínica INDISA')) {
+          if (point.includes('COPEC') || point.includes('Clínica INDISA') || point.includes('Bice Vida')) {
             return (
               <div
                 key={`experience-point-${index}`}
-                className='text-red-600 text-[14px] pl-1 font-bold'
+                className='text-purple-600 text-[14px] pl-1 font-bold'
               >
                 {point}
               </div>
