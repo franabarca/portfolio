@@ -68,7 +68,7 @@ const ExperienceCard = ({ experience }) => {
         })}
       </ul>
       
-      <span className="mt-6 inline-grid grid-cols-5 gap-4 pl-8 pt-2">
+      <span className="mt-6 inline-grid grid-cols-5 gap-4 pt-2">
   {experience.techs &&
     experience.techs.map((tech, index) => (
       <img
