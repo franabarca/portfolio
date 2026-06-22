@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -84,6 +84,18 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [animate, setAnimate] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Desactivamos animaciones en pantallas móviles para evitar saltos de scroll (reflows de altura)
+      setAnimate(window.innerWidth > 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -96,7 +108,7 @@ const Experience = () => {
       </motion.div>
 
       <div className='mt-20 flex flex-col text-justify'>
-        <VerticalTimeline>
+        <VerticalTimeline animate={animate}>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
