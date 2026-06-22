@@ -1,16 +1,17 @@
 export const textVariant = (delay) => {
     return {
       hidden: {
-        y: -50,
+        y: -20,
         opacity: 0,
       },
       show: {
         y: 0,
         opacity: 1,
         transition: {
-          type: "spring",
-          duration: 1.25,
-          delay: delay,
+          type: "tween",
+          ease: "easeOut",
+          duration: 0.5,
+          delay: delay || 0,
         },
       },
     };
