@@ -75,7 +75,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Diseñador Web",
+    title: "Ingeniero de Software",
     icon: web,
   },
   {
@@ -304,10 +304,6 @@ const projects = [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
