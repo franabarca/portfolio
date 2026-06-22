@@ -25,6 +25,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 import spring from "./tech/spring.png";
 import aws from "./tech/aws.png";
+import flutter from "./tech/flutter.png";
 import redhat from "./tech/redhat.png";
 import gitlab from "./tech/gitlab.png";
 import postman from "./tech/postman.jpg";
@@ -54,12 +55,16 @@ import quarkus from "./tech/quarkus.png";
 
 import portafolio from "./portafolio.png";
 import petcuy from "./petcuy.png";
+import topspinarena from "./topspinarena.png";
+import viwith from "./viwith.png";
+import topspinpayments from "./topspinpayments.png";
 
 export {
   elk,
   postman,
   spring,
   aws,
+  flutter,
   redhat,
   gitlab,
   agiled,
@@ -106,5 +111,8 @@ export {
   linkedin,
   gmail,
   arqit,
-  quarkus
+  quarkus,
+  topspinarena,
+  viwith,
+  topspinpayments
 };
